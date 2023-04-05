@@ -1,0 +1,23 @@
+<h1>Lista de productos con websockets</h1>
+<div style="display: flex; justify-content: space-evenly">
+  <div class="form-container">
+    <form id="formData" style="display: flex; flex-direction: column;">
+      <input type="text" name="title" id="title" placeholder="Add product name" autofocus required>
+      <input type="text" name="description" id="description" placeholder="Add product description" required>
+      <input type="text" name="code" id="code" placeholder="Add product code" required>
+      <input type="number" name="price" id="price" placeholder="Add product price" required>
+      <input type="text" name="status" id="status" placeholder="Add product status" required>
+      <input type="number" name="stock" id="stock" placeholder="Add product stock" required>
+      <input type="text" name="category" id="category" placeholder="Add product category" required>
+      <input type="text" name="thumbnails" id="thumbnails" placeholder="Add thumbnails urls" required>
+
+      <button>Agregar producto</button>
+      <button type="reset">RESET FORM</button>
+    </form>
+  </div>
+  <div id="productList">LISTA PRODUCTS</div>
+</div>
+
+
+<script src="/socket.io/socket.io.min.js"></script>
+<script src="js/main.js"></script>
